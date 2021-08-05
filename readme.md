@@ -11,3 +11,8 @@ ARQUIVO EXTERNO:
 <script scr="arquivo.js">
 </script>
 ---------------------------------------------------------------------------------
+
+Tipos de variáveis:
+    -> string - armazenamento de textos, caracteres
+    -> number - int/float
+    -> boolean - true/false
