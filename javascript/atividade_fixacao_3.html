@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>    
+
+
+    <script>
+
+        //atividade para fixação --> 3
+        /*
+        var n1 = prompt("Digite um número:")
+        n1 = parseFloat(n1)
+
+        var tipo = prompt("Digite se deseja adição ou subtração:")
+
+        var n2 = prompt("Digite outro número")
+        n2 = parseFloat(n2)
+
+        function operacao(n1,n2,tipo){
+            var resultado = ""
+            var tipo_valid = true //validação do tipo da variável --> adição ou subtração
+
+            if(tipo==="adição"){
+                resultado = n1+n2
+                document.write("O resultado da soma é: "+resultado, "<br>")
+            }
+            else if (tipo==="subtração"){
+                resultado = n1-n2
+                document.write("O resultado da subtração é: "+resultado, "<br>")
+            }else{
+                tipo_valid = false
+            }
+
+            document.write("<hr>", "Primeiro número digitado = "+n1, "<br>")
+            document.write("Segundo número digitado = "+n2, "<br>")
+
+
+           if(tipo_valid){
+                document.write("Operação escolhida = "+tipo)
+            }else{
+                document.write("Por favor, insira novamente umas das opções: \"adição\" ou \"subtração\"", "<br>")
+                document.write("Operação escolhida = inválida")
+
+            }
+
+            return resultado
+
+        }
+        operacao(n1,n2,tipo) */
+        
+        /*
+            cada nota vale 25
+            media = 70
+            se a nota passar de 100 pedir para digitar as notas novamente
+            se a media for menos de 50, aparecer mensagem de reprovado
+            de 50 ate 69, recuperação
+        */
+    </script>
+</head> 
+<body>
+    
+    <h2>Notas do Semestre</h2>
+        
+            Matemática  <input type="number" min="1" max="25" name="nota[]" value="" required><br>
+            Português <input type="number" min="1" max="25" name="nota[]" value=""  required><br>
+            Ciências <input type="number" min="1" max="25" name="nota[]" value=""  required><br>
+            Geografia <input type="number" min="1" max="25" name="nota[]" value=""  required><br>
+            <button type="submit" onclick="notasSemestre()">Enviar</button>
+        
+
+        <script>
+        
+            function notasSemestre(){
+                var nota = document.getElementsByName("nota[]");
+                console.log(nota)
+                console.log(nota[0]["value"], nota[1]["value"], nota[2]["value"], nota[3]["value"])
+
+                var resultado = parseFloat(nota[0]["value"]) + parseFloat(nota[1]["value"]) + parseFloat(nota[2]["value"]) + parseFloat(nota[3]["value"])
+                
+                media = 70
+
+                if (nota[0]["value"] > 25|| nota[1]["value"] > 25|| nota[2]["value"] > 25||  nota[3]    ["value"] > 25){
+                    alert("Nota não pode ser maior do que 25!")
+                    window.location.reload(false)
+                    //window.location = "https://www.google.com"
+                }
+        
+                if(resultado >= media && resultado <= 100){
+                    document.write("Parabéns, você foi aprovado!")
+                }if(resultado < media && resultado >= 50 ){
+                    document.write("Recuperação")
+                }if (resultado < 50){
+                    document.write("Reprovado!")
+                }
+                return resultado
+        }
+        
+        </script>
+
+</body>
+</html>

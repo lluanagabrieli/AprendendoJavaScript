@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Matemáticas</title>    
+
+    <script>
+
+        //new Number() --> transformação de número para objeto(possui mais infos da var) 
+        //new Number já transforma o valor em float. 
+        var a = "Luana"
+        var b = new Number("10.1")
+        var c = new Number("2.5")
+        document.write(typeof a +"<br>"+ typeof b +"<br>" + c +"<br>")
+        console.log(b,c)
+
+        //Math.ceil() --> arredondamento para cima 
+        var x = Math.ceil(10.2)
+        document.write(x+"<br>")
+        
+        //Math.floor() --> pega sempre o valor inteiro
+        var x = Math.floor(10.2)
+        document.write(x+"<br>")
+
+        //Math.round() --> faz o arredondamento do valor.
+        var x = Math.round(10.5)
+        document.write(x+"<br>")
+
+        //Math.random() --> número aleatório entre 0 e 1.
+        var x = Math.random()
+        document.write(x+"<br>")
+
+        //toFixed() -->  Número de dígitos DEPOIS da vírgula. Faz o arredondamento do número.
+        //O 2 é perfeito para trabalhar com dinheiro.
+        var x = 11.5
+        document.write(x.toFixed(1)+"<br>")
+
+        //toPrecision -->  Número de dígitos contando o primeiro. Faz o arredondamento.
+        var x = 11.5
+        document.write(x.toPrecision(3))
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
