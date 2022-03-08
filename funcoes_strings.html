@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Nativas</title>    
+
+    <script>
+        /* CONCATENAÇÃO
+        var text1 = 'Olá '
+        var text2 = 'usuário!'
+        var text3 = text1.concat('',text2)
+        document.write(text3) 
+        */
+
+
+
+        /* MÉTODO TRIM() - TIRAR ESPAÇOS BRANCOS DAS EXTREMIDADES DA STRING
+        -> primeiro faz o trim ==> var1.trim()
+        -> utiliza-se o var1.length
+
+        trim = aparar --> ele tira os espaços
+        lenght = comprimento --> para conferir quantos caracteres possui, contando os espaços.
+
+        var text1 = '   Luana Gabrieli da Silva Santos!    .      '
+        var text2 = text1.trim()
+
+        document.write('Com o método trim(): '+text2.length+'<br>')
+        document.write('Sem o método: '+text1.length+'')
+        
+        //Propriedade Length
+        document.write('Luana Gabrieli'.length)
+        
+
+
+        padStart e padEnd -> preenchimento no início ou final da string
+        a primeira var é o número de caracteres que será aceito
+        padStart -> o que for proposto na esquerda aparecerá no comeco
+        padEnd -> o que for proposto na esquerda aparecerá no fim
+
+        var number = 'Luana '
+        document.write(number.padEnd(14,'Gabrieli'))
+
+
+        /*charAt() => ele pega um caracter em determinada posição, lembrando que o 0 também conta
+        
+        document.write("Luana Gabrieli".charAt(0), "Luana Gabrieli".charAt(6))*/
+
+
+        // usando \" para usar-se aspas em palavras tranquilamente sem atrapalhar o código
+        document.write("Aqui pode se colocar mais \"aspas\" para não atrapalhar a linha de códigos <br>")
+
+        // \' para uma aspa
+        document.write('It\'s my life<br>')
+
+        // \\ duas barras servem para aparecer uma, pois se colocada sozinha não aparece no texto
+        document.write('My name is \\Luana<br>')
+
+        //Concatenação
+        var x = "Olá "
+        var y = "Luana"
+        document.write(x+y)
+        document.write("<br>")
+
+        //Propriedade Length
+        document.write('Luana Gabrieli'.length)
+        document.write("<br>")
+
+        //Replace() --> faz a substituição de uma string
+        var nome = "Luana Gabrieli da Silva Santos"
+        document.write(nome.replace("da Silva Santos", "Cândido<br>"))
+
+        //Substr() --> pega um caracter inicial e o valor dos próximos que irão aparecer a partir dele
+        document.write(nome.substr(6,8),"<br>")
+
+        //toLowerCase --> transforma todos os caracteres em caixa baixa
+        //toUpperCase --> transforma todos os caracteres em caixa alta
+        document.write(nome.toLowerCase(),"<br>")
+        document.write(nome.toUpperCase(),"<br>")
+
+        var a = "Luana"
+        var b = new Number (10)
+        document.write(typeof a +"<br>"+ typeof b)
+</script>
+</head>
+<body>
+    
+</body>
+</html>

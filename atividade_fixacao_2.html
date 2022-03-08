@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice de massa corporal (IMC)</title>
+
+
+    <script>
+        var nome = prompt('Nome')
+        var altura = prompt('Altura em centímetros (exemplo: 1,75 = 175')
+            altura /= 100
+            altura = parseFloat(altura)
+        var peso = prompt('Peso')
+            peso = parseFloat(peso)
+        var m = peso / (altura*altura)
+            m = parseFloat(m)
+
+            if(m<16){
+                document.write(nome+' possui índice de massa corporal igual a '+m+', sendo classificado(a) como: baixo peso muito grave')
+
+            }else if(m >= 16 && m <= 16.99){
+                document.write(nome+' possui índice de massa corporal igual a '+m+', sendo classificado(a) como: baixo peso grave')
+
+            }else if(m >= 17 && m <= 18.49){
+                document.write(nome+' possui índice de massa corporal igual a '+m+', sendo classificado(a) como: baixo peso')
+
+            }else if(m >= 18.50 && m <= 24.99){
+                document.write(nome+' possui índice de massa corporal igual a '+m+', sendo classificado(a) como: peso normal')
+
+            }else if(m >= 25 && m <= 29.99){
+                document.write(nome+' possui índice de massa corporal igual a '+m+', sendo classificado(a) como: sobrepeso')
+
+            }else if(m >= 30 && m <= 34.99){
+                document.write(nome+' possui índice de massa corporal igual a '+m+', sendo classificado(a) como: Obesidade grau I')
+
+            }else if(m >= 35 && m <= 39.99){
+                document.write(nome+' possui índice de massa corporal igual a '+m+', sendo classificado(a) como: Obesidade grau II')
+
+            }else{
+                document.write(nome+' possui índice de massa corporal igual a '+m+', sendo classificado(a) como: Obesidade grau III')
+            }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

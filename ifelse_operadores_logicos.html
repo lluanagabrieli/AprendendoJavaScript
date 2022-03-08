@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Logicos</title>
+
+    <script>
+        //true && true && true && false
+        if(2==2 && 2<3 && 520>=520 && 233<25){
+            document.write('Verdadeiro<br>')
+        }else{
+            document.write('Falso<br>')
+        }
+
+        //true OU true OU true OU false
+        if(2==2 || 2<3 || 520>=520 || 233<25){
+            document.write('Verdadeiro<br>')
+        }else{
+            document.write('Falso<br>')
+        }
+
+        //4 não é igual a 2, mas com o '!' ele inverte o resultado.
+        if(!(4==2)){
+            document.write('4 é igual a 2<br>')
+        }else{
+            document.write('4 não é igual a 2<br>')
+        }
+        /////////////////////////////////
+        var media = 10
+        var faltas = 5
+
+        var nota = prompt('Digite aqui a sua nota')
+        var faltas_aluno = prompt('Digite aqui as suas faltas')
+    
+        /*if(nota>=media && faltas_aluno<faltas){
+            document.write('Parabéns, você foi aprovado!')
+        }else{
+            document.write('Reprovado')
+        }
+        */
+
+        //OPERADOR TERNÁRIO
+        var resultado = (nota>=media && faltas_aluno<faltas) ? 'Aprovado!<br>' : 'Reprovado!<br>'
+        document.write(resultado)        
+    </script>
+</head>
+<body>
+</body>
+</html>

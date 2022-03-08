@@ -1,0 +1,106 @@
+#calculadora__formato{
+    margin-top: 20px;
+    border: solid 1px rgb(238, 132, 176);
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #eb967a;
+    height: 120%;
+    margin-bottom: -100px;
+}
+.calculadora__formato2 {
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #a8f0cf;
+}
+
+#resultado{
+    font-size: 60px;
+    margin-top: 80px;
+    background-color: white;
+    border: none;
+}
+
+.clear{
+    width: 110px;
+}
+
+.zero {
+    width: 140px;
+}
+
+button.btn:hover{
+    background-color: white;
+    color: #e91880;
+}
+
+button.btn {
+    background-color: rgb(238, 132, 176);
+    width: 65px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+    box-shadow: 3px 3px 1px rgb(161, 99, 125);
+}
+
+button.resultado:hover{
+    background-color: white;
+    color: #e91880;
+}
+
+.divisão{
+    background-color: #ac62a7;
+    box-shadow: 3px 3px 1px #863f82;
+}
+
+button.divisão:hover{
+    background-color: white;
+    color: #e91880;
+}
+
+.mult{
+    background-color: #eb967a;
+    box-shadow: 3px 3px 1px #a8573c;
+}
+
+button.mult:hover{
+    background-color: white;
+    color: #e91880;
+}
+
+.sub{
+    background-color: #ccbb5b;
+    box-shadow: 3px 3px 1px #70662f;
+}
+
+button.sub:hover{
+    background-color: white;
+    color: #e91880;
+}
+
+.igual{
+    background-color: #e91880;
+    height: 105px;
+    box-shadow: 3px 3px 1px #790f44;
+}
+
+button.igual:hover{
+    background-color: white;
+    color: #e91880;
+}
+
+.adição{
+    background-color: #74ca68;
+    box-shadow: 3px 3px 1px #386132;
+}
+
+button.adição:hover{
+    background-color: white;
+    color: #e91880;
+}
+
+.clear{
+    width: 140px;
+}

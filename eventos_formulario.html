@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS</title>    
+    <!-- 
+        EVENTOS DE FORMULÁRIO:
+        . ONFOCUS
+        . ONBLUR
+        . ONCHANGE
+    -->
+   
+</head>
+
+<body>
+    <!-- 
+        ONFOCUS: É QUANDO AQUELE ELEMENTO ESTÁ EM FOCO NO MOMENTO
+        ONBLUR: É QUANDO O ELEMENTO SAI DE FOCO
+     -->
+    <input onfocus="console.log('Elemento em foco!')" onblur="console.log('Elemento saiu de foco!')" type="text"><br>
+
+    <!-- ONCHANGE É QUANDO UM ELEMENTO SOFRE UMA ALTERAÇÃO E ISSO É REGISTRADO -->
+    <select onchange="console.log('teste')">
+        <option>-- Opções --</option>
+        <option>OPÇÃO 1</option>
+        <option>OPÇÃO 2</option>
+    </select>
+</body>
+</html>
