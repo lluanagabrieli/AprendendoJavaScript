@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ATIVIDADE 4 </title>
+
+    <script>
+       //mouse com foco
+        function mouseFoco(yellow){
+            document.getElementById('inputId').style.background = yellow
+        }
+//-------------------------------------------------------------------------
+        //mouse sem foco
+        function mouseSemFoco(cinza){
+            document.getElementById('inputId').style.background = cinza
+        }
+//-------------------------------------------------------------------------
+        //background por número de caracteres
+        function alterandoBackground(){
+            var caracteres = document.getElementById('inputId').value
+            console.log(caracteres.length)
+
+            //lógica
+            if(caracteres.length < 2){
+                document.getElementById('inputId').style.background = 'red'
+            }
+            if(caracteres.length >=2){
+                document.getElementById('inputId').style.background = 'green'
+            }
+        }
+
+        /* GABARITO
+        function acionaCampo() {
+            document.getElementById('campo').style.background = "yellow"
+            }
+        function validaCampo() {
+            var valorCampo = document.getElementById('campo').value
+                if(valorCampo.length < 3) {
+                document.getElementById('campo').style.background = "red"
+                } else {
+                document.getElementById('campo').style.background = "green"
+                }
+        }*/
+    </script>
+
+</head> 
+<body>
+    <input id="inputId"
+    style="background-color: #dcdcdc;"
+    type="text"
+    placeholder="Digite um caracter"
+    onmouseover="mouseFoco('#ffff00')"
+    onmouseout="mouseSemFoco('#dcdcdc')"
+    onkeypress="alterandoBackground()">
+
+    <!-- GABARITO
+        <input id="campo" type="text" onfocus="acionaCampo()" onblur="validaCampo()" />
+    -->
+</body>
+</html>
