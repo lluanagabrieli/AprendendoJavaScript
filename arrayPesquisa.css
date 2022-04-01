@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Righteous&family=Spartan:wght@100;300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(13, 13, 104);
+    font-size: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quadro-funcionarios{
+    display: flex;
+    flex-direction: column;
+    gap:10px ;
+    align-items: center;
+    width: 510px;
+    height: 600px;
+    color: rgba(243, 241, 122, 0.986);
+    background-color: rgb(116, 14, 141);
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.quadro-funcionarios-titulo{
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    padding-top: 35px;
+    font-size: 35px;
+}
+
+#pesquisar{
+    border: none;
+    height: 35px;
+    width: 200px;
+    margin-top: 200px;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+button{
+    margin-top: -20px;
+    border: 2px solid rgba(243, 241, 122, 0.986);
+    border-radius: 15px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+}
+
+.quadro-imagem{
+    margin-top: 20px;
+    height: 180px;
+}
+
+.pqp{
+    
+    font-family: 'Sarala', sans-serif;
+    color: red;
+}
+
+div.pqp{
+    padding: 5px;
+    position: absolute;
+    margin-top: 180px;
+    width:500px;
+	overflow:auto;
+    text-align: center;
+}
+
+.alteracao2{
+    color: #0000ff;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="arrayPesquisa.css">
+    <title>Array método de pesquisa</title>
+</head>
+
+<body>
+
+<main>
+    <div class="quadro-funcionarios">
+        <h1 class="quadro-funcionarios-titulo">Pesquisa de funcionários</h1>
+        
+        <div class="pqp">
+            <h2 id="funcionario" class="alteracao"></h2>
+        </div>
+
+        <input id="pesquisar" type="text"><br>
+        <button  class="botao-submit" type="submit" onclick="checarFuncionario('#0000ff')">Pesquisar</button>
+        
+        <img src="hiring.png" class="quadro-imagem">
+    </div>
+
+    <script>
+        function checarFuncionario(blue){
+
+        var funcionariosEmpresa = [];
+        funcionariosEmpresa[0] = 'Luana'
+        funcionariosEmpresa[1] = 'Gabrieli'
+        funcionariosEmpresa[2] = 'João'
+        funcionariosEmpresa[3] = 'Guilherme'
+        funcionariosEmpresa[4] = 'Lucas'
+        funcionariosEmpresa[5] = 'Luana'
+        funcionariosEmpresa[6] = 'Jorge'
+        funcionariosEmpresa[7] = 'Micael'
+        funcionariosEmpresa[8] = 'Marcelo'
+        funcionariosEmpresa[9] = 'Pedro'
+
+        var pesquisa = document.getElementById('pesquisar').value
+        pesquisaPosicao = funcionariosEmpresa.indexOf(pesquisa)
+
+        if (pesquisaPosicao === -1){
+            document.getElementById('pesquisar').value = ''
+            document.getElementById('funcionario').innerHTML = 'Funcionário(a) '+pesquisa+ ' não existente na empresa.'
+        }else{
+            document.getElementById('pesquisar').value = ''
+            document.getElementById('funcionario').innerHTML = 'Funcionário(a) '+pesquisa+' está na posição '+pesquisaPosicao
+            document.getElementById('funcionario').style.color= blue
+            
+        }
+
+    }
+    </script>
+</main>
+</body>
+
+</html>
