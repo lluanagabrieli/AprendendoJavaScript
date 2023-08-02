@@ -1,18 +1,3 @@
-Pode-se utilizar tanto no próprio arquivo HTML como também em um arquivo externo.
+# Aprendizados - JavaScript
 
----------------------------------------------------------------------------------
-NO ARQUIVO HTML:
-<script> 
-    code JavaScript
-</script> 
-
----------------------------------------------------------------------------------
-ARQUIVO EXTERNO:
-<script scr="arquivo.js">
-</script>
----------------------------------------------------------------------------------
-
-Tipos de variáveis:
-    -> string - armazenamento de textos, caracteres
-    -> number - int/float
-    -> boolean - true/false
+Repositório destinado a armazenar todos os meus aprendizados de aulas sobre JavaScript. Durante as aulas, estarei estudando e praticando conceitos fundamentais da linguagem, como variáveis, estruturas de controle, funções, objetos, manipulação de DOM, entre outros.
