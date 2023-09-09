@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+</head>
+<body>
+
+    <!--
+        ORDENAÇÃO DE ELEMENTOS - ALFABÉTICO E NUMERAL
+
+        var lista_nomes = [];
+        lista_nomes [0] = 'Karthus'
+        lista_nomes [1] = 'Graves'
+        lista_nomes [2] = 'Darius'
+        lista_nomes [3] = 'Ekko'
+        lista_nomes [4] = 'Ahri'
+
+        console.log(lista_nomes.sort())
+
+        var lista_numeros = [10,100,5,15,1];
+
+        console.log(lista_numeros.sort(numerosOrdenacao))//essa é uma função padrão para ordenar números
+
+        function numerosOrdenacao(a,b){
+            return a-b;
+        }
+    
+    -->
+
+    <input id="campo-texto" type="text">
+    <button onclick="botaoAdicionar()">Adicionar</button>
+    <button onclick="ordenarElementos()">Ordenar</button>
+
+    <script>
+
+        function botaoAdicionar(){
+        var objetos = ['Cadeira', 'Impressora', 'Garfo']
+        var pegarValor = document.getElementById("campo-texto").value
+        console.log(pegarValor)
+
+            if (pegarValor.length === 0) { 
+                alert("Informe um valor válido!")
+            }else{
+                pesquisaArrayObjeto = objetos.indexOf(pegarValor)
+
+                switch(pesquisaArrayObjeto){
+                    case -1:
+                        objetos.push(pegarValor)
+                        console.log(objetos)
+                        var pegarValor = document.getElementById("campo-texto").value = ""
+                    break
+
+                    default:
+                        alert("Objeto já foi adicionado!")
+                }
+            }
+        }
+
+        function ordenarElementos(){
+            var objetos = ['Cadeira', 'Impressora', 'Garfo']
+            console.log(objetos.sort())
+        }
+
+    </script>
+
+</body>
+</html>

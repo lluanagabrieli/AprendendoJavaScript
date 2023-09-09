@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Erros</title>
+</head>
+
+<body>
+
+    <script>
+        //TRATAMENTO DE ERROS COM TRY, CATCH, THROW E FINALLY.
+
+        //arrays
+        let filmes = []
+        filmes[1] = []
+        filmes[1]['nomes']= 'Questão de Tempo'
+        filmes[1]['catálogo'] = 'Romance'
+
+        function getVideo(filmes){
+            
+            try{
+                console.log(filmes[0]['nomes'])
+            }catch(e){
+                console.log('N.E')
+            }
+        }
+        getVideo(filmes)
+    </script>
+
+</body>
+
+</html>

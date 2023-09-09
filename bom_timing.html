@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM - TIMING</title>
+    <style>
+        .style1{
+            border: 3px solid pink;
+            background-color: white;
+            border-radius: 25px;
+            font-size: 2em;
+            padding: 10px;
+            color: black;
+        }
+        .style2{
+            border: 3px solid black;
+            background-color: white;
+            border-radius: 25px;
+            font-size: 2em;
+            padding: 10px;
+            color: pink;
+        }
+    </style>
+</head>
+
+    
+<body>
+    <!--H1 que vai aparecer o relógio-->
+    <h1 class="timeText" id="timeText"></h1>
+    <!--Botão-->
+    <button class="style1" id="btt" onclick="definition()">Pausar</button>
+
+    <script>
+       
+       let timeInterval = setInterval(timeFunction,'')
+       
+       function timeFunction(){
+            let x = new Date()
+                document.getElementById('timeText').innerHTML = x.toLocaleTimeString()
+       }
+       
+       function definition(){
+            let bttStyle = document.getElementById('btt').className
+
+            if(bttStyle === 'style1'){
+                clearInterval(timeInterval)
+                document.getElementById('btt').className = 'style2'
+                document.getElementById('btt').innerHTML = 'Retornar'
+            }else{
+                document.getElementById('btt').className = 'style1'
+                document.getElementById('btt').innerHTML = 'Pausar'
+                timeInterval = setInterval(timeFunction,'')
+            }
+       }
+
+       /*
+        -----------------------------------------------------------------
+        setInterval: coloca-se a função e depois o tempo de intervalos em milissegundos.
+            => setInterval(function(){}, intervaloTempo)
+
+        clearInterval: uso para parar o tempo.
+            => clearInterval()
+
+        ------------------------------------------------------------------
+
+        let x = 5
+        let time = setInterval(timeFunction, 1000)
+
+        function timeFunction(){
+             document.write(x)
+             x--
+             if(x===0){
+                clearInterval(time)
+             }
+        }
+       */
+    </script>
+ 
+
+</body>
+
+</html>

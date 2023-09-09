@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In</title>
+</head>
+<body>
+
+
+<script>
+
+    var nomes = Array();
+
+    nomes [true] = 'Luana'
+    nomes [false] = 'Rodrigo'
+    nomes [2] = 'Diego'
+    nomes ['verde'] = 'João'
+    nomes ['inexistente'] = 'Carlos'
+
+    console.log(nomes)
+
+    for(var x in nomes){
+        document.write('Valor: '+nomes[x] + ', índice: '+ x +'</br>')
+    }
+
+
+</script>
+
+</body>
+</html>

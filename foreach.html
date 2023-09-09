@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In</title>
+</head>
+<body>
+
+
+<script>
+    //nomeArray.forEach(function(indice,valor,array))
+
+    /* 
+    ****** PRIMEIRA FORMA *********
+
+    var nomeFuncionarios = ['Luana', 'Juliana', 'Paula', 'Ariani', 'Tamiris'];
+
+    nomeFuncionarios.forEach(function (indice, valor,array){
+        console.log('Indice: '+indice+ ', Valor: '+valor+ ', Array: '+array)
+    })
+
+    */
+
+    //****** SEGUNDA FORMA *********
+    var nomeFuncionarios = ['Luana', 'Juliana', 'Paula', 'Ariani', 'Tamiris'];
+    var x = function (indice,valor){
+        console.log(valor,indice)
+    }
+
+    nomeFuncionarios.forEach(x)
+    
+    
+
+</script>
+
+</body>
+</html>
